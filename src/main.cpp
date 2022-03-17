@@ -51,7 +51,7 @@ void loop() {
     }
 
     for(int i=0; i<4; i++){
-        neokey.pixels.setPixelColor(i, seesaw_NeoPixel::Color(int(bright[i]),0,0));
+        neokey.pixels.setPixelColor(3-i, seesaw_NeoPixel::Color(int(bright[i]),0,0));
         if (pressed[i]){
             bright[i] = 255;
             if(i>0){
